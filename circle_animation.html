@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Animation</title>
+    <style>
+        #main {
+            height: 100px;
+            width: 100px;
+            border-radius: 50px;
+            margin: 250px;
+            background-color: red;
+            animation: ani1;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes ani1 {
+            0% {
+                transform: rotate(0deg) translateX(80px) rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg) translateX(80px) rotate(-360deg);
+                background-color: yellow;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <h2>
+        Animation on circular path
+    </h2>
+    <div id="main">
+
+    </div>
+</body>
+
+</html>

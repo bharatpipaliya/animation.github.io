@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        #main
+        {
+            height: 150px;
+            width: 150px;
+            background-color: red;
+            animation: ani1 5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes ani1
+        {
+            from
+            {
+                margin-left: 0px;
+                margin-top: 0px;
+                /* transform: skew(10deg,10deg); */
+                /* rotate: 60deg; */
+            }
+            to
+            {
+                margin-left: 150px;
+                margin-top: 0px;
+            }
+
+           
+        }
+    </style>
+</head>
+<body>
+    <h2>
+        Animation using FROM TO Method
+    </h2>
+    <div id="main">
+
+    </div>
+</body>
+</html>
